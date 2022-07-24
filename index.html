@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/book.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Users data</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background-color: rgb(143, 143, 143);
+          border-radius: 10px;
+        }
+         
+        ::-webkit-scrollbar-thumb {
+          background: #05718f; 
+          border-radius: 6px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #00a0cc; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+       <a href="https://t.me/AbuBakr_Siddiq_Fairman" class="telegram-link"> <i class="fa-brands fa-telegram"></i></a>
+        <button class="mode_btn"><img src="./images/day-and-night.png" class="mode-image" alt="" width="30px"></button>
+    </header>
+    
+    <main>
+        <div class="container">
+
+
+            
+                <ul class="js-list">
+                </ul>
+
+
+                <ul class="js-post-list">
+                </ul>
+
+
+                 <ul class="js-comments-list">
+                </ul>
+
+        </div>
+    </main>
+
+    
+
+    <template class="user_template">
+        <li class="item box-shadow">
+            <img class="item_bg_img" src="./images/—Pngtree—blue and white porcelain border_6679032.png" alt="" width="250px">
+            <h2 class="item_name"></h2>
+            <h3 class="item_username"></h3>
+            <p class="item_street"></p>
+            <p class="item_suite"></p>
+            <p class="item_city"></p>
+            <div class="company-box">
+                <h3 class="item_company_name"></h3>
+                <p class="item_catch_phrase"></p>
+                <p class="item_comment"></p>
+                <p class="item_zipcode"></p>
+            </div>  
+            <div class="links-box">
+                <a href="" target="_blank" class="item_phone"><i class="fa-solid fa-phone"></i> phone</a>
+                <a href="" target="_blank" class="item_email"><i class="fa-solid fa-at"></i> email</a>
+                <a href="" target="_blank" class="item_website"><i class="fa-brands fa-chrome"></i> website</a>
+                <a href="" target="_blank" class="location"></a>
+            </div>
+            <span class="item_id"></span>
+        
+        
+        
+        </li>
+    </template>
+
+
+   <template class="post_template"> 
+        <li class="post">
+            <span class="post_user_id"></span>
+            <h3 class="post_title"></h3>
+            <p class="post_text"></p>
+        </li>
+    </template>
+
+
+
+   <template class="comments_template"> 
+        <li class="comments">
+            <span class="comments_user_id"></span>
+            <a href="" class="comments_email"></a>
+            <h3 class="comments_title"></h3>
+            <p class="comments_text"></p>
+        </li>
+    </template>
+
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/darkmode.js"></script>
+    <!-- <script src="./js/utils.js"></script> -->
+</body>
+</html>
